@@ -1,0 +1,9 @@
+<!--This view will look similar every time, it is used to iterate over the ingredients and print them out in a list-->
+<!--Create a list, iterate over ingredients, link to the name, then link to the edit path-->
+<h1>Ingredients</h1>
+
+<ul>
+    <% @ingredients.each do |ingredient|%>
+    <li><%= link_to ingredient.name, edit_ingredient_path(ingredient) %></li>
+    <%end%>
+</ul>

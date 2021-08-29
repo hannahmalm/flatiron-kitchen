@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FlatironKitchen</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <title>FlatironKitchen</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags%>
+    </head>
+    <body>
+<!--This will yield anything else if you make new layout views-->
+    <%= yield %>
+    </body>
+    </html>
+<!--This is the satndard layout file-->
 
-<%= yield %>
-
-</body>
-</html>
